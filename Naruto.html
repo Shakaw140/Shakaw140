@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>		
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="cs/style.css">
+
+</head>
+<body>
+				<style>
+				    *{
+
+      margin:0; padding:0;
+      box-sizing: border-box;
+      text-transform: capitalize;
+      font-family: Verdana, Arial, Geneva, Tahoma, sans-serif;
+      font-weight: normal;
+
+}
+
+body{
+     background:
+     #000000;
+}
+.heading{
+
+       color: #ffffff;
+       font-size: 40px;
+       text-align: center;
+       padding:10px;
+}
+
+.container {
+      display: grid;    
+      grid-template-columns: 2fr 1fr;
+gap: 15px;
+      align-items: flex-start;
+      padding:5px 5%;
+
+}
+container .main-video{
+      background:#a5a5b4;
+      border-radius: 5px;
+      padding:10px;
+}
+
+.container .main-video video{
+    width:100%;
+    border-radius: 5px;
+
+}
+
+.container .main-video .title{
+
+    color: #ffffff;
+    font-size: 23px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+container video-list{
+
+    background:#fff;
+    border-radius: 5px;
+    height:520px;
+    overflow-y: scroll;
+}
+.container .video-list::-webkit-scrollbar{
+
+width: 7px;
+
+}
+
+.container .video-list::-webkit-scrollbar-track{
+
+    background: #ccc;
+    border-radius: 50px;
+}
+
+.container video-list::-webkit-scrollbar-thumb{
+    background: #666;
+    border-radius: 50px;
+}
+
+.container .video-list .vid video{
+   width:100px;
+   border-radius: 5px;
+}
+
+.container .video-list .vid{
+display: flex;
+align-items: center;
+gap: 15px;
+background: #ffffff;
+border-radius: 5px;
+margin:10px;
+padding:10px;
+border:1px solid Orgba(0,0,0,.1);
+cursor: pointer;
+}
+
+.container .video-list .vid:hover{
+
+background:#eee;
+}
+
+.container .video-list .vid.active{
+background: #8e9b9b;
+}
+
+.container .video-list .vid.active .title{
+color:#fff;
+}
+
+.container .video-list .vid.title{
+color: #333;
+font-size: 17px;
+}
+@media (max-width: 991px){
+.container {
+grid-template-columns: 1.5fr 1fr;
+padding:10px;
+}
+
+}
+@media (max-width: 768px){
+.container {
+grid-template-columns: 1fr;
+}
+p{
+color: #ffffff;
+
+				</style>
+				
+				
+				
+<h3 class="heading"> </h3>
+<div class="container">
+<div class="main-video">
+<div class="video">
+        <video poster="imagens/screenshot" src="http://142.202.242.139/animes/b-12/animes/naruto-classico/dublado/hd/1.mp4?rm=b4ogFBQSOAD6JqeEuKb6Kg&rf=1652480652 " controls muted autoplay></video>
+<h3 class="title">Naruto clássico dublado: episódio 1</h3>
+        </div>
+     </div>
+     
+<!-- alterada agora01 -->
+<div class="video-list">
+<div class="vid active">
+<video src="http://142.202.242.139/animes/b-12/animes/naruto-classico/dublado/hd/2.mp4?rm=w8GfrBwA6IFfnARCR-tGmQ&rf=1652483028 " muted></video> <h3 class="title">Naruto clássico dublado: episódio 2</h3>
+
+</div>
+
+ <div class="vid">
+<video src="http://142.202.242.139/animes/b-12/animes/naruto-classico/dublado/hd/3.mp4?rm=pmUhbnbP0u9c-bE6mG-CPA&rf=1652482420 " muted></video>
+<h3 class="title">Naruto clássico dublado: episódio 3</h3>
+
+</div>
+
+<div class="vid">
+<video src="http://142.202.242.139/animes/b-12/animes/naruto-classico/dublado/hd/4.mp4?rm=rz1oqwVTQqax3DCmbpogDA&rf=1652477371 " muted></video> <h3 class="title">Naruto clássico dublado: episódio 4</h3>
+
+</div>
+         <div class="vid">
+<video src="http://142.202.242.139/animes/b-12/animes/naruto-classico/dublado/hd/5.mp4?rm=gm1pmA8raXGP15kon0yzIA&rf=1652478631 " muted></video>
+<h3 class="title">Naruto clássico dublado: episódio 5</h3>
+
+</div>
+
+         <div class="vid">
+<video src="http://142.202.242.139/animes/b-12/animes/naruto-classico/dublado/hd/6.mp4?rm=qLNeuNCXp7vvD1CtdOZmzQ&rf=1652482458 " muted></video>
+<h3 class="title">Naruto clássico dublado: episódio 6</h3>
+<!-- adcionei -->
+</div>
+          <div class="vid">
+<video src="http://142.202.242.139/animes/b-12/animes/naruto-classico/dublado/hd/7.mp4?rm=Vh4PasNKjQX-LEt_PBsFXg&rf=1652483208 " muted></video>
+<h3 class="title">Naruto clássico dublado: episódio 7</h3>
+
+</div>
+
+          <div class="vid">
+<video src="http://142.202.242.139/animes/b-12/animes/naruto-classico/dublado/hd/8.mp4?rm=sjmCIJ9uqvESBOjkmG81JQ&rf=1652482348 " muted></video>
+<h3 class="title">Naruto clássico dublado: episódio 8</h3>
+
+</div>
+           <div class="vid">
+<video src="http://142.202.242.139/animes/b-12/animes/naruto-classico/dublado/hd/9.mp4?rm=aMGBa4coEMaCXFrNzjW7Hw&rf=1652481498 " muted></video>
+<h3 class="title">Naruto clássico dublado: episódio 9</h3>
+
+        </div>
+        
+        <div class="vid">
+<video src="http://142.202.242.139/animes/b-12/animes/naruto-classico/dublado/hd/10.mp4?rm=cCNAcbXIv9TuYelqICjRow&rf=1652483112 " muted></video>
+<h3 class="title">Naruto clássico dublado: episódio 10</h3>
+
+        </div>
+     </div>
+  </div>
+  
+  <h4>Novos episódios serão adicinados em breve!</h4>
+  
+  <p>Peça seu anime já em nosso <a href="https://www.instagram.com/summer_vibes140?r=nametag">Instagram</a></p>
+   
+   <script>
+
+         let listVideo = document.querySelectorAll('.video-list .vid');
+
+let mainVideo = document.querySelector('.main-video video');
+
+let title = document.querySelector('.main-video .title');
+
+listVideo.forEach(video =>{ video.onclick= () => {
+
+listVideo.forEach(vid => vid.classList.remove('active')); video.classList.add('active');
+
+if(video.classList.contains('active')) {
+
+let src= video.children [0].getAttribute('src');
+
+mainVideo.src = src;
+
+let text = video.children [1].innerHTML;
+
+title.innerHTML = text
+
+};
+
+};
+
+});
+
+</script>
+
+</body>
+
+</html>

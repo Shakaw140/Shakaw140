@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Título da página</title>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="lista de animes.css">
+
+</head>
+<body>
+        
+        
+        <h3 class="heading"></h3>
+<div class="container">
+<div class="main-video">
+<div class="video">
+
+        </div>
+     </div>
+     
+<!-- alterada agora01 -->
+<div class="video-list">
+<div class="vid active">
+<img src="https://img1.ak.crunchyroll.com/i/spire4/5568ffb263f6bcba85a639980b80dd9a1612993223_full.jpg" width="60px" height="100px"> <h3 class="title"><a href="Naruto.html">Naruto clássico dublado </h3></a>
+
+</div>
+
+ <div class="vid">
+<img src="https://img1.ak.crunchyroll.com/i/spire1/7ecebc51121e040277c48df2f47e5dcf1276054031_large.jpg" width="60px" height="100px">
+<h3 class="title">Dragon ball z Kai</h3>
+
+</div>
+
+<div class="vid">
+<img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3SQW2EgSQetVX91m--X_v1pJEt4eYcluckSO0p3kzCMmf5yKq" width="60px" height="100px"><h3 class="title">
+    <a href="play vídeo.html">Dragon ball GT dublado</h3></a>
+
+</div>
+         <div class="vid">
+<img src="https://img1.ak.crunchyroll.com/i/spire3/dac363972d628a7009e04fdeb9d7104a1641869274_full.jpg" width="60px" height="100px"> <a href="play vídeo.html">
+<h3 class="title">Attack of Titan</h3> </a>
+
+</div>
+
+         <div class="vid">
+<img src="https://sm.ign.com/ign_br/tv/m/my-hero-ac/my-hero-academia_f9ae.jpg" width="60px" height="100px"> 
+<h3 class="title">Boku No Hero Academy</h3>
+<!-- adcionei -->
+</div>
+
+<div class="vid">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs2g3_CNMQVpBlVqpJ84dYWsQ9mdBj9rCWYw&usqp=CAU" width="60px" height="100px">
+<h3 class="title">
+    
+    <a href="play vídeo.html">Demon Slayer kimetsu no yaiba</h3> </a>
+
+</div>
+          
+     </div>
+  </div>
+   
+
+<!-- fim -->
+
+<script>
+
+         let listVideo = document.querySelectorAll('.video-list .vid');
+
+let mainVideo = document.querySelector('.main-video video');
+
+let title = document.querySelector('.main-video .title');
+
+listVideo.forEach(video =>{ video.onclick= () => {
+
+listVideo.forEach(vid => vid.classList.remove('active')); video.classList.add('active');
+
+if(video.classList.contains('active')) {
+
+let src= video.children [0].getAttribute('src');
+
+mainVideo.src = src;
+
+let text = video.children [1].innerHTML;
+
+title.innerHTML = text
+
+};
+
+};
+
+});
+
+</script>
+
+</body>
+</html>
